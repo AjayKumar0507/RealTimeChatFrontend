@@ -1,0 +1,11 @@
+@tanstack/react-query
+wouter
+next-themes
+framer-motion
+react-icons
+radix-ui
+react-intersection-observer
+class-variance-authority
+tailwind-merge
+lucide-react
+tailwindcss @tailwindcss/vite
