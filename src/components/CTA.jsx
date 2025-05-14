@@ -28,9 +28,6 @@ export default function CTA() {
             <a href="#" className="px-8 py-4 rounded-full font-medium gradient-bg text-white hover:shadow-xl transition-all duration-300 text-center">
               Get Started Free
             </a>
-            <a href="#" className="px-8 py-4 rounded-full font-medium border border-gray-200 hover:border-primary flex items-center justify-center gap-2 hover:text-primary transition-all duration-300 text-center">
-              <FaCalendar /> Book a Demo
-            </a>
           </div>
         </motion.div>
       </div>

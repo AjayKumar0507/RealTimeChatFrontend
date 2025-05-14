@@ -16,7 +16,7 @@ export default function Home() {
       <Features />
       <AppShowcase />
       <Testimonials />
-      <Pricing />
+      
       <FAQ />
       <CTA />
       <Footer />

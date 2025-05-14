@@ -9,3 +9,7 @@ class-variance-authority
 tailwind-merge
 lucide-react
 tailwindcss @tailwindcss/vite
+react-router-dom
+react-hook-form
+@hookform/resolvers zod
+axios

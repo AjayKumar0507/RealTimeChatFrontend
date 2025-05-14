@@ -4,18 +4,20 @@ import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import "../index.css"
+import { useNavigate } from 'react-router-dom';
+
 
 const navItems = [
   { label: 'Features', href: '#features' },
   { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Pricing', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  
+  const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -25,19 +27,21 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleNavClick = (href) => {
-    setIsOpen(false);
-    
-    if (href.startsWith('#')) {
-      const element = document.querySelector(href);
-      if (element) {
-        window.scrollTo({
-          top: element.getBoundingClientRect().top + window.scrollY - 100,
-          behavior: 'smooth',
-        });
-      }
+const handleNavClick = (href) => {
+  setIsOpen(false);
+
+  if (href.startsWith('#')) {
+    const element = document.querySelector(href);
+    if (element) {
+      window.scrollTo({
+        top: element.getBoundingClientRect().top + window.scrollY - 100,
+        behavior: 'smooth',
+      });
     }
-  };
+  } else {
+    navigate(href);
+  }
+};
 
   return (
     <motion.header
@@ -76,13 +80,13 @@ export default function Navbar() {
             <Button 
               variant="outline" 
               className="hidden md:inline-block"
-              onClick={() => handleNavClick("#")}
+              onClick={() => navigate("/auth")}
             >
               Login
             </Button>
             <Button 
               className="gradient-bg hover:shadow-lg"
-              onClick={() => handleNavClick("#")}
+              onClick={() => navigate("/auth")}
             >
               Get Started
             </Button>

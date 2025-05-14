@@ -37,9 +37,6 @@ export default function Hero() {
               <button className="px-8 py-4 rounded-full font-medium gradient-bg text-white hover:shadow-xl transition-all duration-300 text-center">
                 Get Started Free
               </button>
-              <button className="px-8 py-4 rounded-full font-medium border border-gray-200 hover:border-primary flex items-center justify-center gap-2 hover:text-primary transition-all duration-300 text-center">
-                <FaPlayCircle /> See how it works
-              </button>
             </motion.div>
             
             <motion.div 
@@ -98,8 +95,8 @@ export default function Hero() {
                       </div>
                     </div>
                     
-                    <div className="flex justify-end mb-4">
-                      <div className="bg-primary text-white rounded-2xl rounded-tr-none p-3 shadow-sm max-w-[70%]">
+                    <div className="flex justify-end mb-4 text-black ">
+                      <div className="bg-white  rounded-2xl rounded-tr-none p-3 shadow-sm max-w-[70%]">
                         <p className="text-sm">Almost done with the first milestone! Just wrapping up the documentation.</p>
                         <p className="text-xs text-white/70 text-right mt-1">10:26 AM</p>
                       </div>
@@ -112,30 +109,6 @@ export default function Hero() {
                       </div>
                     </div>
                     
-                    <div className="flex justify-end mb-4">
-                      <div className="bg-primary text-white rounded-2xl rounded-tr-none p-3 shadow-sm max-w-[70%]">
-                        <p className="text-sm">Absolutely! I have a presentation ready to go. See you at 2 PM.</p>
-                        <p className="text-xs text-white/70 text-right mt-1">10:30 AM</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex justify-start mb-4">
-                      <div className="bg-white rounded-2xl rounded-tl-none p-3 shadow-sm max-w-[70%]">
-                        <p className="text-sm">Perfect! 👍 Looking forward to it.</p>
-                        <p className="text-xs text-gray-400 text-right mt-1">10:31 AM</p>
-                      </div>
-                    </div>
-                    
-                    <div className="py-4 text-center">
-                      <span className="text-xs bg-gray-100 text-gray-500 px-4 py-1 rounded-full">Today</span>
-                    </div>
-                    
-                    <div className="flex justify-end">
-                      <div className="bg-primary text-white rounded-2xl rounded-tr-none p-3 shadow-sm max-w-[70%]">
-                        <p className="text-sm">I'm sending over the files now. Check your inbox!</p>
-                        <p className="text-xs text-white/70 text-right mt-1">Just now</p>
-                      </div>
-                    </div>
                   </div>
                   
                   <div className="absolute bottom-0 left-0 right-0 p-3 bg-white border-t border-gray-100">
