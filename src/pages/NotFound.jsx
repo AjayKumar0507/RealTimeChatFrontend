@@ -1,6 +1,6 @@
-import { Card } from "@/components/ui/card";
+import { Card } from "@/components/ui/Card";
 import { AlertCircle } from "lucide-react";
-import {CardContent} from "@/components/ui/card";
+import {CardContent} from "@/components/ui/Card";
 export default function NotFound() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
