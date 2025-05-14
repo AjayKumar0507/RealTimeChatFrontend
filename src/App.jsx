@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/notfound";
+import NotFound from "./pages/NotFound";
 import Home from "@/pages/Home";
 import { ThemeProvider } from "next-themes";
 import './index.css';
